@@ -1,0 +1,24 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block title %}
+  Проекты {{username}}
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{%static 'css/show-projects.css'%}"/>
+<p class="id-proj">Проекты {{username}}</p>
+<div class="project-list">
+  {% if projects %}
+  {% for project in projects %}
+  <div class="project-item">
+    <div class="project-name">{{project.project_name}}</div>
+    <a href="{% url 'see-project' project_id=project.pk %}"><button class="edit-button">Смотреть</button></a>
+  </div>
+  {% endfor %}
+  {% else %}
+    <div>У пользователя еще нет проектов</div>
+  {% endif %}
+  
+</div>
+  
+{% endblock content %}
+ 

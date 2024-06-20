@@ -1,0 +1,121 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block title %}
+  Профиль
+{% endblock %}
+{% block content %}
+{% load static%}
+<link rel="stylesheet" href="{%static 'css/profile&search.css'%}"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  {% if user_form.errors %}
+    <div class="alert alert-danger alert-dismissible" role="alert">
+      <div id="form_errors">
+        {% for key, value in user_form.errors.items %}
+          <strong>{{ value }}</strong>
+        {% endfor %}
+      </div>
+       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
+  {% endif %}
+
+  <div class="container">
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="flex profile-main">
+        <div class="">
+          <div class="left-block">
+            <div class="profile-picture">
+              <img class="profile-img" src="{{ user.profile.avatar.url }}" style="cursor: pointer;" width="152px" height="152px"/>
+              {{ profile_form.avatar }}
+            </div>
+
+            <div class="username">
+              {{ user.username }}
+            </div>
+            <div class="elem">
+              <label>Почта:</label>
+              <div class="flex">
+                <img class="email-img" src="{% static 'img/icons8-почта-50 1.svg' %}" alt="" />
+                {{ user_form.email }}
+              </div>
+            </div>
+            <div class="elem">
+              <label>Телефон:</label>
+              <div class="flex">
+                <img class="phone-img" src="{% static 'img/free-icon-telephone-5037238 1.svg' %}" alt="" />
+                {{ profile_form.telephone }}
+              </div>
+            </div>
+
+            <div class="elem followers-div">
+              <div class="describtions">Подписки: {{ user.profile.count_subscribers }}</div>
+              <div class="followers">Подписчики: {{ user.profile.count_subscriptions }}</div>
+            </div>
+          </div>
+
+          <div class="block">
+            <a class="none-decoration" href="{% url 'upload-project' %}">
+              <div class="upload-proj">
+                <img src="{% static 'img/Group 42.svg' %}" alt="">
+                <p>Загрузить проект</p>
+              </div>
+            </a>
+
+
+
+            <a class="none-decoration" href="{% url 'my-projects' %}">
+              <div class="button-view-projects">
+                  <p>Посмотреть проекты</p>
+              </div>
+            </a>
+
+
+
+            <!--<div class="view-projects">
+              <a class="text" href="{% url 'my-projects' %}">Посмотреть проекты</a>
+            </div> -->
+          </div>
+        </div>
+        <div class="right">
+          <div class="block">
+            <label>Языки программирования</label>
+            {{ profile_form.programming_languages }}
+
+            <label>Дополнительные инструменты</label>
+            {{ profile_form.additional_tools }}
+          </div>
+
+          <div class="block">
+            <label>Hard-Skills</label>
+            {{ profile_form.hard_skills }}
+
+            <label>Soft-Skills</label>
+            {{ profile_form.soft_skills }}
+
+            <label>Опыт</label>
+            {{ profile_form.experience }}
+
+            <label>Участие в хакатонах</label>
+            {{ profile_form.hackathons }}
+
+            <label>Опыт в написании статей</label>
+            {{ profile_form.articles }}
+
+            <label>Уровень владения иностранным языком</label>
+            {{ profile_form.foreign_language }}
+          </div>
+
+          <button type="submit" class="save-btn">Сохранить</button>
+        </div>
+      </div>
+      <button class="exit-btn"><a href="{% url 'logout' %}" class="text">Выйти</a></button>
+
+
+      <!-- <button type="reset" class="btn btn-dark btn-lg">Reset</button> -->
+      <!-- <div>
+        <a href="{% url 'password_change' %}">Сменить пароль</a>
+      </div> -->
+    </form>
+  </div>
+{% endblock %}

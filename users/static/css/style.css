@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    font-family: inter;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 120px;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #1F2029;
+    color: #FFEBA7;
+}
+.main-header-glav{
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    margin: 0 auto;
+    background-color: #2E2F3D;
+    min-height: 92px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index:1;
+}
+.logo{
+    width: 207px;
+    height: 64px;
+    margin-left: 30px;
+    margin-right: 50px;
+    position:fixed;
+}
+.buttons{
+    display: flex;
+    column-gap: 40px;;
+}
+
+.input-group-append{
+  cursor: pointer;
+  position: absolute;
+  left: 236px;
+}
+
+.login-button{
+    color: #FFEBA7;
+    background-color: #404254;
+    font-size: 20px;
+    border-radius: 15px;
+    border-width: 0;
+    width: 190px;
+    height: 51px;
+    cursor: pointer;
+}
+.register-button{
+    color: #FFEBA7;
+    background-color: #404254;
+    font-size: 20px;
+    border-radius: 15px;
+    border-width: 0;
+    width: 250px;
+    height: 51px;
+    cursor: pointer;
+}
+.login-button:hover{
+    box-shadow: 0 13px #1F2029;
+    top: 67px;
+}
+.register-button:hover{
+    box-shadow: 0 13px #1F2029;
+    top: 67px;
+}
+.login-button:active{
+    box-shadow: none;
+    top: 71px;
+}
+.register-button:active{
+    box-shadow: none;
+    top: 71px;
+}
+.search-input{
+    background-color: #404254;
+    color:#FFEBA7;
+    height: 51px;
+    width: 408px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-width: 0;
+    padding-left: 40px;
+}
+.user-data-icon{
+    width: 64px;
+    height: 64px;
+    left:1360px;
+    position:fixed;
+    top:17px;
+}
+.text{
+  color: #FFEBA7;
+}
+.text:hover{
+  color: coral;
+}
+.main-home-1{
+margin:0
+}
+.title-home{
+    color:black;
+    width: 414px;
+    height: 309px;
+    font-size:25px;
+    background-color:#D9D9D9;
+    border-radius: 20px;
+    position: relative;
+    top:-300px;
+    left:800px;
+}
+.signature{
+    color: black;
+    background-color:#D9D9D9;
+    width: 525px;
+    font-size:25px;
+    height:197px;
+    border-radius: 30px;
+    position: relative;
+    top:-230px;
+    left: 56px;
+}
+.signature-text{
+    position: relative;
+    width: 500px;
+    text-align: center;
+    top:70px;
+}
+.home-text{
+    position: relative;
+    top:20px;
+    left: 5px;
+    width: 440px;
+}
+.newProfile{
+    position: relative;
+    top:-100px;
+    left:600px;
+}
+.input-group-append {
+  position: absolute;
+  left: calc(100% - 43px);
+  top: 1px;
+}
+.main-home-2{
+margin-top:200px;
+}
+.title-home-2{
+    position: relative;
+    left:50px;
+    background-color: #303241;
+    color:white;
+    font-size:23px;
+    border-radius: 10px;
+    width:620px;
+    height:283px;
+}
+.home-text-2{
+    position: relative;
+    top:20px;
+    left: 10px;
+    width: 620px;
+}
+.profile-img {
+    border-radius: 50%;
+    border: 3px solid #FFEBA7;
+    margin-bottom: 0px;
+}
+.img-logo{
+    position: relative;
+    top:-310px;
+    left:950px;
+}
+.logo-text{
+    font-size: 70px;
+    position: relative;
+    top:-300px;
+    left:950px;
+}
+.projects-new{
+    margin-top:100px;
+    font-size: 50px;
+    font-weight: 600;
+    top:-340px;
+    left: 50px;
+    position: relative;
+}
+.project{
+    color:white;
+    background-color:#404254;
+    width: 1250px;
+    height: 630px;
+    padding-top:16px;
+    position: relative;
+    top:-350px;
+    left: 50px;
+    margin-bottom:50px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    background-color:#303241;
+    border: 2px solid black;
+    margin-bottom: 35px;
+    margin-left: 17px;
+    width: 1210px;
+    height: 87px;
+    border-radius: 20px;
+}
+.name p{
+    margin-left:50px;
+    font-size: 25px;
+    font-weight: 500;
+    position:relative;
+    top:5px;
+    width: 350px;
+    height: 44px;
+}
+.name button{
+    background-color: #1F2029;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    border-width: 0;
+    width: 250px;
+    height:44px;
+    cursor: pointer;
+    margin-left: 530px;
+}
+.description{
+    width: 1210px;
+    height: 350px;
+    font-size:25px;
+    margin-left:17px;
+    display: flex;
+}
+.proj-descrip{
+    background-color: #303241;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left:20px;
+    width: 700px;
+    height: 350px;
+    padding-top: 10px;
+}
+.proj-tools{
+    background-color: #303241;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 20px;
+    width: 400px;
+    height: 350px;
+    margin-left: auto;
+    padding-top: 10px;
+}
+.footer-project{
+    display:flex;
+    align-items: center;
+    width: 1210px;
+    gap:400px;
+    height: 69px;
+    margin-left: 17px;
+    margin-top: 50px;
+}
+.footer-project button{
+    width: 400px;
+    height: 69px;
+    position:relative;
+    top:-20px;
+    font-size: 25px;
+    background-color: #303241;
+    color:#FFEBA7;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.footer-project p{
+    background-color: #303241;
+    color:#FFEBA7;
+    font-size:25px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 25px;
+    width: 433px;
+    height: 69px;
+    text-transform:uppercase;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+
+/* Капс для слова "ПОИСК" */
+.search-input::placeholder {
+    text-transform: uppercase;
+    font: inter;
+    font-weight: 400;
+}

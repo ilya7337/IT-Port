@@ -1,0 +1,112 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block title %}
+  Профиль {{ user_inf.username }}
+{% endblock %}
+{% block content %}
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/profile&search.css' %}" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  {% if user_form.errors %}
+    <div class="alert alert-danger alert-dismissible" role="alert">
+      <div id="form_errors">
+        {% for key, value in user_form.errors.items %}
+          <strong>{{ value }}</strong>
+        {% endfor %}
+      </div>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
+  {% endif %}
+
+  <div class="container">
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <div class="flex profile-main">
+        <div class="">
+          <div class="left-block">
+            <div class="profile-picture">
+              <img class="profile-img" src="{{ user_inf.profile.avatar.url }}" style="cursor: pointer;" width="152px" height="152px" />
+            </div>
+
+            <div class="username">{{ user_inf.username }}</div>
+            <div class="elem">
+              <label>Почта:</label>
+              <div class="flex">
+                <img class="email-img" src="{% static 'img/icons8-почта-50 1.svg' %}" alt="" />
+                {{ user_inf.email }}
+              </div>
+            </div>
+            <div class="elem">
+              <label>Телефон:</label>
+              <div class="flex">
+                <img class="phone-img" src="{% static 'img/free-icon-telephone-5037238 1.svg' %}" alt="" />
+                {{ user_inf.profile.telephone }}
+              </div>
+            </div>
+
+            <div class="elem followers-div">
+              <div class="describtions">Подписки: {{ user_inf.profile.count_subscribers }}</div>
+              <div class="followers">Подписчики: {{ user_inf.profile.count_subscriptions }}</div>
+            </div>
+
+
+            {% if is_subscribed and user.is_authenticated%}
+              <div class="sub-btn-div">
+                <a href="{% url 'unsubscribe' username=user_inf.username %}" class="subscribe-btn">Отписаться</a>
+              </div>
+            {% elif not is_subscribed and user.is_authenticated %}
+              <div class="sub-btn-div">
+                <a href="{% url 'subscribe' username=user_inf.username %}" class="subscribe-btn">Подписаться</a>
+              </div>
+            {% else %}
+            <div class="sub-btn-div">
+              <a href="{% url 'users-register' %}" class="subscribe-btn">Подписаться</a>
+            </div>
+            {% endif %}
+          </div>
+
+          <div class="block">
+            <a class="none-decoration" href="{% url 'see-projects' username=user_inf.username %}">
+              <div class="button-view-projects">
+                <p>Посмотреть проекты</p>
+              </div>
+            </a>
+
+            <!--    <div class="view-projects">
+              <a class="text" href="{% url 'my-projects' %}">Посмотреть проекты</a>
+            </div>     -->
+          </div>
+        </div>
+        <div class="right">
+          <div class="block">
+            <label>Языки программирования</label>
+            <div class="input-area">{{ user_inf.profile.programming_languages }}</div>
+
+            <label>Дополнительные инструменты</label>
+            <div class="input-area">{{ user_inf.profile.additional_tools }}</div>
+          </div>
+
+          <div class="block">
+            <label>Hard-Skills</label>
+            <div class="input-area">{{ user_inf.profile.hard_skills }}</div>
+
+            <label>Soft-Skills</label>
+            <div class="input-area">{{ user_inf.profile.soft_skills }}</div>
+
+            <label>Опыт</label>
+            <div class="input-area">{{ user_inf.profile.experience }}</div>
+
+            <label>Участие в хакатонах</label>
+            <div class="input-area">{{ user_inf.profile.hackathons }}</div>
+
+            <label>Опыт в написании статей</label>
+            <div class="input-area">{{ user_inf.profile.articles }}</div>
+
+            <label>Уровень владения иностранным языком</label>
+            <div class="input-area">{{ user_inf.profile.foreign_language }}</div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+{% endblock %}

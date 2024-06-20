@@ -1,0 +1,34 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block title %}
+  Результаты поиска по запросу: {{search_inf}}
+{% endblock %}
+
+{% block content %}
+{% load static%}
+<link rel="stylesheet" href="{%static 'css/profile&search.css'%}"/>
+
+  <p>{{message}}</p>
+  
+  {% for user in users %}
+    <div class="area-for-search">
+        <div class="user-container">
+                <div class="profile-picture-search">
+                  <img class="profile-img" src="{{ user.profile.avatar.url }}" style="cursor: pointer;" width="75px" height="75px"/>
+                  {{ profile_form.avatar }}
+                </div>
+                <div class="username-search">
+
+                    {{user.username}}
+                </div>
+                <div class="describtions">Подписки: {{user.profile.count_subscribers}}</div>
+                <div class="followers">Подписчики: {{user.profile.count_subscriptions}}</div>
+                <div class="profile-btn">
+                    <a class="a-search" href="{% url "see-profile" username=user.username %}">Профиль</a>
+                </div>
+        </div>
+    </div>
+  {% endfor %}
+
+{% endblock content %}
+ 

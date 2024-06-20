@@ -1,0 +1,93 @@
+[2024.06.19 23:16:37] Launched version: 5001007, install beta: [FALSE], alpha: 0, debug mode: [FALSE]
+[2024.06.19 23:16:37] Executable dir: D:/Users/Telegram Desktop/, name: Telegram.exe
+[2024.06.19 23:16:37] Initial working dir: D:/Users/Telegram Desktop/
+[2024.06.19 23:16:37] Working dir: D:/Users/Telegram Desktop/
+[2024.06.19 23:16:37] Command line: D:\Users\Telegram Desktop\Telegram.exe
+[2024.06.19 23:16:37] Executable path before check: D:/Users/Telegram Desktop/Telegram.exe
+[2024.06.19 23:16:37] Logs started
+[2024.06.19 23:16:38] AppUserModelID: Telegram.TelegramDesktop.92a607d03d44c09736da58140e2ae947
+[2024.06.19 23:16:38] Using DirectX compiler 'D:\Users\Telegram Desktop\modules\x64\d3d\d3dcompiler_47.dll'.
+[2024.06.19 23:16:38] Connecting local socket to Global\6f0a2094996c9df7abb4266f1383de04-{87A94AB0-E370-4cde-98D3-ACC110C5967D}...
+[2024.06.19 23:16:38] This is the only instance of Telegram, starting server and app...
+[2024.06.19 23:16:38] Moved logging from 'D:/Users/Telegram Desktop/log_start4.txt' to 'D:/Users/Telegram Desktop/log.txt'!
+[2024.06.19 23:16:38] Old start log 'log_start0.txt' found, deleted: [TRUE]
+[2024.06.19 23:16:38] Old start log 'log_start1.txt' found, deleted: [TRUE]
+[2024.06.19 23:16:38] Old start log 'log_start2.txt' found, deleted: [TRUE]
+[2024.06.19 23:16:38] Old start log 'log_start3.txt' found, deleted: [TRUE]
+[2024.06.19 23:16:38] Opened 'D:/Users/Telegram Desktop/tdata/working' for reading, the previous Telegram Desktop launch was not finished properly :( Crash log size: 0
+[2024.06.19 23:16:38] Global devicePixelRatio: 1
+[2024.06.19 23:16:38] QT_DPI_ADJUSTMENT_POLICY: AdjustDpi
+[2024.06.19 23:16:38] Primary screen DPI: 120, Base: 96.
+[2024.06.19 23:16:38] Computed screen scale: 125
+[2024.06.19 23:16:38] DevicePixelRatio: 1
+[2024.06.19 23:16:38] ScreenScale: 125
+[2024.06.19 23:16:38] Media Info: Type Playback, default: {0.0.0.00000000}.{289a2d8f-75ff-48cf-9fe0-088c320a66dd}, list: { "Головной телефон (HONOR Earbuds 2 Lite Hands-Free)" <{0.0.0.00000000}.{0ee9955f-d4b2-4a24-ba9f-b004ad3ffb7f}>, "Headphones (Senary Audio)" <{0.0.0.00000000}.{125b1e55-aa84-496e-b451-06a1280b39f5}>, "Speakers (Senary Audio)" <{0.0.0.00000000}.{289a2d8f-75ff-48cf-9fe0-088c320a66dd}>, "Наушники (Senary Audio)" <{0.0.0.00000000}.{4cac4d75-0a4b-4abf-8984-623f68c82f9c}>, "Динамики (АлИсА)" <{0.0.0.00000000}.{77c0d1dd-019e-4d0a-b8b6-70d6e46cab9e}>, "Динамики (2- АлИсА)" <{0.0.0.00000000}.{8c40ed53-3a50-4567-b3d6-3489315bc25a}>, "Digital Output (AMD High Definition Audio Device)" <{0.0.0.00000000}.{8e97aa80-0381-4382-8f1e-2ee95e2d2b79}>, "Внутренний разъем  AUX (Senary Audio)" <{0.0.0.00000000}.{9b3a6630-f174-4299-bcf6-705d5a721495}>, "Динамики (Nahimic mirroring device)" <{0.0.0.00000000}.{b37d82a2-3445-4834-9575-0bf91033850b}>, "Наушники (HONOR Earbuds 2 Lite)" <{0.0.0.00000000}.{bd48983b-e860-451c-94e5-fef1bdae40c8}>, "Динамики (LG CJ45  (49))" <{0.0.0.00000000}.{def22d64-1337-4bcb-8df2-ff43758e44df}> }, full list refresh: false
+[2024.06.19 23:16:38] Media Info: Type Capture, default: {0.0.1.00000000}.{882612e4-fd3b-4c03-aad4-e4dbc4fd65f9}, list: { "Головной телефон (HONOR Earbuds 2 Lite Hands-Free)" <{0.0.1.00000000}.{084a8169-5240-478f-a6ec-9b0863516076}>, "Internal AUX Jack (AMD High Definition Audio Device)" <{0.0.1.00000000}.{11cd0cb5-34a3-4475-b91b-3f979cd19d9e}>, "Internal Microphone (Senary Audio)" <{0.0.1.00000000}.{882612e4-fd3b-4c03-aad4-e4dbc4fd65f9}>, "Microphone (Senary Audio)" <{0.0.1.00000000}.{ee87c416-693d-490d-bff5-5224ad51799b}>, "Внутренний разъем  AUX (Senary Audio)" <{0.0.1.00000000}.{fe1b7d9e-7b45-4de8-9ebc-f86cdad9fbb1}> }, full list refresh: false
+[2024.06.19 23:16:38] Media Info: Type Camera, default: \\?\usb#vid_13d3&pid_5480&mi_00#7&4deb29&2&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global, list: { "HD Camera" <\\?\usb#vid_13d3&pid_5480&mi_00#7&4deb29&2&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global> }, full list refresh: true
+[2024.06.19 23:16:38] App Info: reading settings...
+[2024.06.19 23:16:38] App Info: reading encrypted settings...
+[2024.06.19 23:16:38] Lang Info: Loaded cached, keys: 7016
+[2024.06.19 23:16:38] Font: from ':/gui/fonts/OpenSans-Regular.ttf' loaded 'Open Sans'
+[2024.06.19 23:16:38] Font: from ':/gui/fonts/OpenSans-Italic.ttf' loaded 'Open Sans'
+[2024.06.19 23:16:38] Font: from ':/gui/fonts/OpenSans-SemiBold.ttf' loaded 'Open Sans Semibold'
+[2024.06.19 23:16:38] Font: from ':/gui/fonts/OpenSans-SemiBoldItalic.ttf' loaded 'Open Sans Semibold'
+[2024.06.19 23:16:38] Font: from ':/gui/fonts/Vazirmatn-UI-NL-Regular.ttf' loaded 'Vazirmatn UI NL'
+[2024.06.19 23:16:38] Font: from ':/gui/fonts/Vazirmatn-UI-NL-SemiBold.ttf' loaded 'Vazirmatn UI NL SemiBold'
+[2024.06.19 23:16:38] OpenAL Logging Level: (not set)
+[2024.06.19 23:16:38] App Info: reading accounts info...
+[2024.06.19 23:16:38] App Info: reading encrypted info...
+[2024.06.19 23:16:38] App Info: reading map...
+[2024.06.19 23:16:38] App Info: reading encrypted map...
+[2024.06.19 23:16:38] App Info: reading encrypted user settings...
+[2024.06.19 23:16:38] App Info: encrypted user settings read.
+[2024.06.19 23:16:38] App Info: reading encrypted mtp data...
+[2024.06.19 23:16:38] MTP Info: read keys, current: 5, to destroy: 0
+[2024.06.19 23:16:38] Map read time: 7
+[2024.06.19 23:16:38] App Info: reading encrypted mtp config...
+[2024.06.19 23:16:39] Export Info: Destroy top bar by controller removal.
+[2024.06.19 23:16:39] OpenGL: Using custom 'gpu_driver_bug_list.json'.
+[2024.06.19 23:16:39] OpenGL Profile: OpenGLES.
+[2024.06.19 23:16:39] OpenGL Renderer: ANGLE (AMD, AMD Radeon(TM) Graphics Direct3D11 vs_5_0 ps_5_0, D3D11-31.0.12046.15003)
+[2024.06.19 23:16:39] OpenGL Vendor: Google Inc. (AMD)
+[2024.06.19 23:16:39] OpenGL Version: OpenGL ES 3.0.0 (ANGLE 2.1.10 git hash: e3f59e8d0c3e)
+[2024.06.19 23:16:39] OpenGL Extensions: GL_ANGLE_shader_pixel_local_storage_coherent, GL_EXT_map_buffer_range, GL_EXT_texture_format_BGRA8888, GL_OES_compressed_ETC2_punchthroughA_RGBA8_texture, GL_EXT_EGL_image_external_wrap_modes, GL_EXT_depth_clamp, , GL_EXT_texture_compression_s3tc_srgb, GL_ANGLE_pack_reverse_row_order, GL_EXT_debug_label, GL_EXT_multi_draw_indirect, GL_ANGLE_texture_compression_dxt5, GL_EXT_clip_cull_distance, GL_OES_texture_float_linear, GL_EXT_occlusion_query_boolean, GL_APPLE_clip_distance, GL_CHROMIUM_lose_context, GL_EXT_shader_texture_lod, GL_OES_standard_derivatives, GL_ANGLE_framebuffer_blit, GL_OES_EGL_image_external_essl3, GL_CHROMIUM_copy_compressed_texture, GL_OES_texture_float, GL_ANGLE_texture_usage, GL_CHROMIUM_copy_texture, GL_CHROMIUM_sync_query, GL_OES_texture_half_float_linear, GL_OES_texture_stencil8, GL_WEBGL_video_texture, GL_EXT_instanced_arrays, GL_ANGLE_get_serialized_context_string, GL_EXT_multisampled_render_to_texture, GL_OVR_multiview, GL_ANGLE_robust_client_memory, GL_EXT_debug_marker, GL_NV_EGL_stream_consumer_external, GL_OES_texture_npot, GL_ANGLE_copy_texture_3d, GL_ANGLE_texture_multisample, GL_EXT_frag_depth, GL_NV_pack_subimage, GL_ANGLE_base_vertex_base_instance, GL_OES_texture_border_clamp, GL_NV_shader_noperspective_interpolation, GL_ANGLE_provoking_vertex, GL_NV_framebuffer_blit, GL_ANGLE_client_arrays, GL_OES_packed_depth_stencil, GL_EXT_conservative_depth, GL_ANGLE_lossy_etc_decode, GL_KHR_parallel_shader_compile, GL_EXT_sRGB, GL_ANGLE_program_cache_control, GL_CHROMIUM_bind_uniform_location, GL_OES_compressed_EAC_RG11_unsigned_texture, GL_EXT_unpack_subimage, GL_ANGLE_framebuffer_multisample, GL_EXT_texture_border_clamp, GL_NV_pixel_buffer_object, GL_OES_sample_variables, GL_KHR_debug, GL_OES_fbo_render_mipmap, GL_AMD_performance_monitor, GL_OES_compressed_ETC2_sRGB8_texture, GL_OES_compressed_EAC_R11_signed_texture, GL_EXT_discard_framebuffer, GL_ANGLE_polygon_mode, GL_EXT_base_instance, GL_ANGLE_multi_draw, GL_EXT_texture_storage, GL_OES_compressed_ETC2_RGB8_texture, GL_ANGLE_depth_texture, GL_ANGLE_stencil_texturing, GL_OES_compressed_ETC2_punchthroughA_sRGB8_alpha_texture, GL_ANGLE_clip_cull_distance, GL_OES_element_index_uint, GL_EXT_draw_elements_base_vertex, GL_OES_depth24, GL_EXT_texture_compression_rgtc, GL_CHROMIUM_bind_generates_resource, GL_OES_compressed_ETC2_sRGB8_alpha8_texture, GL_EXT_texture_norm16, GL_OES_depth32, GL_EXT_float_blend, GL_EXT_blend_func_extended, GL_OES_draw_elements_base_vertex, GL_OVR_multiview2, GL_EXT_blend_minmax, GL_ANGLE_renderability_validation, GL_OES_compressed_ETC2_RGBA8_texture, GL_ANGLE_multiview_multisample, GL_OES_rgb8_rgba8, GL_EXT_read_format_bgra, GL_OES_get_program_binary, GL_EXT_draw_buffers_indexed, GL_OES_shader_multisample_interpolation, GL_EXT_polygon_offset_clamp, GL_ANGLE_get_tex_level_parameter, GL_EXT_texture_type_2_10_10_10_REV, GL_OES_compressed_EAC_RG11_signed_texture, GL_OES_surfaceless_context, GL_ANGLE_texture_compression_dxt3, GL_EXT_clip_control, GL_ANGLE_request_extension, GL_EXT_texture_compression_bptc, GL_EXT_texture_mirror_clamp_to_edge, GL_OES_texture_half_float, GL_ANGLE_instanced_arrays, GL_EXT_draw_buffers, GL_OES_draw_buffers_indexed, GL_EXT_texture_rg, GL_ANGLE_translated_shader_source, GL_OES_mapbuffer, GL_EXT_color_buffer_float, GL_EXT_robustness, GL_NV_fence, GL_ANGLE_base_vertex_base_instance_shader_builtin, GL_OES_EGL_image_external, GL_EXT_disjoint_timer_query, GL_ANGLE_shader_pixel_local_storage, GL_EXT_texture_compression_dxt1, GL_OES_compressed_EAC_R11_unsigned_texture, GL_ANGLE_memory_size, GL_EXT_render_snorm, GL_EXT_color_buffer_half_float, GL_OES_EGL_image, GL_OES_vertex_array_object, GL_EXT_texture_filter_anisotropic
+[2024.06.19 23:16:39] EGL Extensions: EGL_EXT_create_context_robustness, EGL_ANGLE_d3d_share_handle_client_buffer, EGL_ANGLE_d3d_texture_client_buffer, EGL_ANGLE_surface_d3d_texture_2d_share_handle, EGL_ANGLE_query_surface_pointer, EGL_ANGLE_window_fixed_size, EGL_ANGLE_keyed_mutex, EGL_ANGLE_surface_orientation, EGL_ANGLE_direct_composition, EGL_ANGLE_windows_ui_composition, EGL_NV_post_sub_buffer, EGL_KHR_create_context, EGL_KHR_image, EGL_KHR_image_base, EGL_KHR_gl_texture_2D_image, EGL_KHR_gl_texture_cubemap_image, EGL_KHR_gl_renderbuffer_image, EGL_KHR_get_all_proc_addresses, EGL_KHR_stream, EGL_KHR_stream_consumer_gltexture, EGL_NV_stream_consumer_gltexture_yuv, EGL_ANGLE_stream_producer_d3d_texture, EGL_ANGLE_create_context_webgl_compatibility, EGL_CHROMIUM_create_context_bind_generates_resource, EGL_CHROMIUM_sync_control, EGL_EXT_pixel_format_float, EGL_KHR_surfaceless_context, EGL_ANGLE_display_texture_share_group, EGL_ANGLE_display_semaphore_share_group, EGL_ANGLE_create_context_client_arrays, EGL_ANGLE_program_cache_control, EGL_ANGLE_robust_resource_initialization, EGL_ANGLE_create_context_extensions_enabled, EGL_ANDROID_blob_cache, EGL_ANDROID_recordable, EGL_ANGLE_image_d3d11_texture, EGL_ANGLE_create_context_backwards_compatible, EGL_KHR_no_config_context, EGL_KHR_create_context_no_error, EGL_KHR_reusable_sync, 
+[2024.06.19 23:16:39] OpenGL: QOpenGLContext created, version: 3.3.
+[2024.06.19 23:16:39] OpenGL: [TRUE] (Window)
+[2024.06.19 23:16:40] API Warning: not loaded minimal channel applied.
+[2024.06.19 23:16:40] API Warning: not loaded minimal channel applied.
+[2024.06.19 23:16:40] API Warning: not loaded minimal channel applied.
+[2024.06.19 23:16:52] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:17:54] Audio Info: Closing audio playback device.
+[2024.06.19 23:18:07] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:18:10] Audio Info: Closing audio playback device.
+[2024.06.19 23:18:10] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:18:19] Audio Info: Closing audio playback device.
+[2024.06.19 23:18:19] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:18:26] Audio Info: Closing audio playback device.
+[2024.06.19 23:18:43] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:18:46] Audio Info: Closing audio playback device.
+[2024.06.19 23:18:56] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:18:58] Audio Info: Closing audio playback device.
+[2024.06.19 23:19:05] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:19:09] Audio Info: Closing audio playback device.
+[2024.06.19 23:19:17] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:19:24] Audio Info: Closing audio playback device.
+[2024.06.19 23:19:25] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:19:42] Audio Info: Closing audio playback device.
+[2024.06.19 23:19:47] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:19:50] Audio Info: Closing audio playback device.
+[2024.06.19 23:19:54] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:19:58] Audio Info: Closing audio playback device.
+[2024.06.19 23:20:07] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:20:12] Audio Info: Closing audio playback device.
+[2024.06.19 23:20:21] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:20:26] Audio Info: Closing audio playback device.
+[2024.06.19 23:20:37] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:20:48] Audio Info: Closing audio playback device.
+[2024.06.19 23:21:01] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:21:07] Audio Info: Closing audio playback device.
+[2024.06.19 23:21:25] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:21:36] Audio Info: Closing audio playback device.
+[2024.06.19 23:21:38] Audio Info: recreating audio device and reattaching the tracks
+[2024.06.19 23:21:47] Audio Info: Closing audio playback device.

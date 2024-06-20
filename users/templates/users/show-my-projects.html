@@ -1,0 +1,26 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block title %}
+  Мои проекты
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{%static 'css/show-projects.css'%}"/>
+  <div>
+      <p class="id-proj">Мои проекты</p>
+    {% if projects %}
+      <div class="project-list">
+            {% for project in projects %}
+                <div class="project-item">
+                    <div class="project-name">{{ project.project_name }}</div>
+                    <a href="{% url 'edit-project' project_id=project.pk %}"><button class="edit-button">Редактировать</button></a>
+                </div>
+      {% endfor %}
+      </div>
+      {% else %}
+      <div class="empty-state">
+            <h1>У вас ещё нет проектов</h1>
+            <button class="add-button" onclick="location.href='/upload-project'">+</button>
+        </div>
+    {% endif %}
+  </div>
+{% endblock %}

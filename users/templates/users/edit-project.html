@@ -1,0 +1,56 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block title %}
+  Изменить проект
+{% endblock %}
+{% block content %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <link rel="stylesheet" href="{% static 'css/edit-project.css' %}"/>
+    <body>
+        <div class="main-container">
+            <div class="left-column">
+                <div class="block project-name">
+                    <h2>Название проекта</h2>
+                    {{ form_project.project_name }}
+                </div>
+                <div class="block description">
+                  <h2>Описание</h2>
+                  {{ form_project.description }}
+                </div>
+                <div class="block upload">
+                  {% for file, name in files %}
+                  <div class="file-block">
+                    {{ name }}
+                     <a class="del-file btn" href="{% url 'delete-file' file_id=file.id %}">Удалить файл</a>
+                     {% comment %} <a href="{% url 'see-file' file_id=file.id %}">Посмотреть содержимое файла</a> {% endcomment %}
+                  </div>
+                {% endfor %}
+                {{ form_files }}
+                </div>
+                <div class="block visibility">
+                    <div class="visibility-toggle">
+                       <h2>Cделать репозиторий видимым</h2>
+                        <label class="checkbox-ios">
+                          <input type="checkbox">
+                          <span class="checkbox-ios-switch">{{ form_project.is_visible_repository }}</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="block programming_languages">
+                    <h2>Языки программирования</h2>
+                    {{ form_project.programming_languages }}
+                </div>
+                <div class="block additional_tools">
+                    <h2>Доп инструменты</h2>
+                    {{ form_project.additional_tools }}
+                </div>
+                <div>
+                    <button class="edit-btn" type="submit">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </body>
+{% endblock %}

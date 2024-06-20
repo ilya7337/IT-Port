@@ -1,0 +1,39 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block title %}
+  Проект {{ project.project_name }}
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/edit-project.css' %}"/>
+<body>
+  <div class="main-container">
+      <div class="left-column">
+        <div class="block project-name">
+          <h2>Название проекта</h2>
+          <textarea readonly>{{ project.project_name }}</textarea>
+        </div>
+          <div class="block description">
+            <h2>Описание</h2>
+          <textarea readonly>{{ project.description }}</textarea>
+          </div>
+          <div class="block upload">
+              <h2>Файлы</h2>
+            {% for file, name in files %}
+            <div><a class="download" download href="{{ file.file.url }}">{{ name }}</a></div>
+            {% endfor %}
+          </div>
+      </div>
+      <div class="right-column">
+        <div class="block programming_languages">
+          <h2>Языки программирования</h2>
+          <textarea class="textarea" readonly>{{ project.programming_languages }}</textarea>
+      </div>
+      <div class="block additional_tools">
+          <h2>Доп инструменты</h2>
+          <textarea class="textarea" readonly>{{ project.additional_tools }}</textarea>
+      </div>
+      </div>
+  </div>
+</body>
+{% endblock %}

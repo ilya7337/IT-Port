@@ -1,0 +1,63 @@
+.id-proj{
+font-size:40px;
+text-align:center;
+margin:0;
+}
+
+.project-list {
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  .project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #404254;
+    color: #FFEBA7;
+    width: 1200px;
+    height: 80px;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-bottom:30px;
+  }
+  .project-name {
+    font-size: 36px;
+    padding-left: 58px;
+
+  }
+  .edit-button {
+    color: #FFEBA7;
+    background-color: #303241;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border-width: 0;
+    cursor: pointer;
+  }
+  .empty-state {
+    margin-top: 160px;
+    text-align: center;
+    color: #FFEBA7;
+  }
+  .empty-state h1 {
+    font-size: 60px;
+    margin-bottom: 80px;
+  }
+  .add-button {
+    font-size: 200px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #FFEBA7;
+  }
+  .add-button-project {
+    font-size: 130px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #FFEBA7;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+  }

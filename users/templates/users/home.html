@@ -1,0 +1,60 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% block title %}
+  Главная страница
+{% endblock %}
+{% block content %}
+  {% comment %}Если зареган{% endcomment %}
+  {% if user.is_authenticated %}
+    <div class="main-home-2">
+      <div class="title-home-2">
+        <div class="home-text-2">
+          <span>Воспользуйся поиском, найди других пользователей</span>
+          <br /><br /><br /><span>Перейди в профиль и заполни информацию о себе</span>
+          <br /><br /><br /><span>Выкладывай свои проекты</span>
+        </div>
+      </div>
+      <img class="img-logo" src="{% static 'img/Logo 2.png' %}" alt="Логотип сайта" width="217" height="221" />
+      <p class="logo-text">IT-Port</p>
+      <p class="projects-new">Самые Свежие Проекты</p>
+      <div>
+        {% for project in projects %}
+          <div class="project">
+            <div class="name">
+              <p>{{ project.project_name }}</p>
+              <a href="{% url 'see-project' project_id=project.pk %}"><button>Смотреть проект</button></a>
+            </div>
+            <div class="description">
+              <div class="proj-descrip">{{ project.description }}</div>
+              <div class="proj-tools">
+                <div>{{ project.programming_languages }}</div>
+                <div>{{ project.additional_tools }}</div>
+              </div>
+            </div>
+            <div class="footer-project">
+              <p>{{ project.user }}</p>
+              <a href="{% url 'see-profile' username=project.user %}"><button>Профиль</button></a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% comment %}Если не зареган{% endcomment %}
+  {% else %}
+    <div class="main-home-1">
+      <img class="triangle" src="{% static 'img/triangle.png' %}" alt="triangle" width="562" height="583" />
+      <div class="title-home">
+        <div class="home-text">
+          <span>Создай свое портфолио</span>
+          <br /><br /><span>Поделись своими проектами</span>
+          <br /><br /><span>Расскажи о своем опыте</span>
+          <br /><br /><span>Найди свою команду</span>
+        </div>
+      </div>
+      <div class="signature">
+        <p class="signature-text">Вот так будет выглядеть ваш профиль</p>
+      </div>
+      <img class="newProfile" src="{% static 'img/newProfile.jpg' %}" alt="Будущий профиль" />
+    </div>
+  {% endif %}
+{% endblock %}
